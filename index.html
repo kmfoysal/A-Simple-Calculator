@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple Calculator</title>
+
+    <!-- Tailwind Css Intigration  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-gray-900">
+    
+    <section class="flex justify-center	items-center h-screen">
+        <!-- <div class="container bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 py-8 w-3/4 mx-auto"> -->
+        
+            <div id="calculator" class="bg-gray-200 rounded shadow-2xl mx-auto w-80 pb-4">
+                <div id="displayBox" class="text-right p-4 h-28">
+                    <div id="inputBox" class="text-base text-gray-500">
+                        <p id="inputValue" class=""></p>
+                    </div>
+                    <div id="outputBox" class="text-4xl font-medium mt-2">
+                        <p id="outputValue" class=""></p>
+                    </div>
+                </div>
+                <div id="keyBoard" class="grid grid-cols-4 justify-items-center gap-4 text-lg font-bold px-4">
+                    <button class="operator rounded-full bg-gray-300 w-12 h-12" id="clear">C</button>
+                    <button class="operator rounded-full bg-gray-300 w-12 h-12" id="back-space">CE</button>
+                    <button class="operator rounded-full bg-gray-300 w-12 h-12" id="%">%</button>
+                    <button class="operator rounded-full bg-pink-400 w-12 h-12" id="/">/</button>
+                    <button class="number border border-gray-500 rounded-full w-12 h-12" id="7">7</button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="8">8</button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="9">9</button>
+                    <button class="operator rounded-full bg-yellow-400 w-12 h-12" id="*">*</button>
+                    <button class="number border border-gray-500 rounded-full w-12 h-12" id="4">4</button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="5">5</button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="6">6</button>
+					<button class="operator rounded-full bg-green-400 w-12 h-12" id="-">-</button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="1">1</button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="2">2</button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="3">3</button>
+					<button class="operator rounded-full bg-blue-400 w-12 h-12" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number border border-gray-500 rounded-full w-12 h-12" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator rounded-full bg-purple-500 w-12 h-12" id="=">=</button>
+                </div>
+            </div>
+
+        <!-- </div> -->
+    </section>
+
+    <!-- Javascrit file Intigration  -->
+    <script src="script.js"></script>
+</body>
+</html>
